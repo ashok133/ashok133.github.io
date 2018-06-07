@@ -5,6 +5,7 @@ body {
 }
 body {
   overflow: hidden;
+  background-color: #000000; 
 
 }
 
@@ -49,6 +50,7 @@ body {
   /*font-family: Consolas, monaco, monospace;*/
   font-family: Consolas, monaco, monospace;
   font-size: 24px;
+  color: #ffffff;
   font-style: normal;
   font-variant: normal;
   font-weight: 500;
@@ -58,6 +60,30 @@ body {
   clear: both;
   position: relative;
   padding-top: 360px;
+}
+
+.navbar {
+  font-family: Consolas, monaco, monospace;
+  overflow: hidden;
+  background-color: #000000;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
 }
 
 .hoja {
@@ -86,7 +112,7 @@ body {
   height: 100%;
   -webkit-transform-origin: center center;
           transform-origin: center center;
-}
+}/*
 .hoja:after {
   box-shadow: inset 0 17.5px 0 rgba(170, 170, 170, 0.6), inset 17.5px 0 0 rgba(239, 66, 86, 0.6), inset 0 -17.5px 0 rgba(239, 66, 86, 0.6);
   -webkit-animation: rotar 2s -0.5s linear infinite;
@@ -152,4 +178,4 @@ body {
     -webkit-transform: rotateZ(-360deg) scaleX(1) scaleY(1);
             transform: rotateZ(-360deg) scaleX(1) scaleY(1);
   }
-}
+}*/
