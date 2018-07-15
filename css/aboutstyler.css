@@ -1,12 +1,12 @@
 body, html {
     height: 100%;
     margin: 0;
+    overflow-y: scroll;
 }
 
 .bg {
     /*background-image: url("../images/contact-bg.png");*/
     background-color: #212121;
-    height: auto;
     width: auto; 
     background-position: center;
     background-repeat: no-repeat;
@@ -15,31 +15,51 @@ body, html {
 
 .header {
   /*font-family: Consolas, monaco, monospace;*/
-  font-family: Consolas, monaco, monospace;
+  /*font-family: Consolas, monaco, monospace;*/
+  /*font-family: verdana;*/
+  font-family: "Proxima Nova Soft", sans-serif;
+  /*font-family: 'Raleway', sans-serif;*/
   font-size: 18px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 200;
-  color: #f7f7f7;
+  /*font-style: normal;
+  font-variant: normal;*/
+  font-weight: 100;
+  color: #212121;
   margin: auto;
-  width: 70%;
+  width: 75%;
   /*height: auto;*/
   position: relative;
-  padding-top: 60px;
+  padding-top: 40px;
+  text-shadow: 0px 7px 26px rgba(150, 150, 150, 0.25)
 }
 
 .content {
     width: 100%;
     /*border: 2px solid black;*/
-    padding: 5px;
+    padding: 2px;
     overflow: hidden;
     float: right;
 }
 
 .content img {
-    margin-right: 20px;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-right: 40px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    float: left;
+    position: relative;
+}
+
+.content-edu {
+    width: 100%;
+    /*border: 2px solid black;*/
+    padding: 2px;
+    overflow: hidden;
+    float: right;
+}
+
+.content-edu img {
+    margin-right: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     float: left;
     position: relative;
 }
@@ -47,13 +67,15 @@ body, html {
 .navbar {
   left:50%;
   overflow: hidden;
-  font-family: Consolas, monaco, monospace;
+  /*font-family: Consolas, monaco, monospace;*/
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  /*font-family: 'Quicksand';*/
   background-color: #f7f7f7;
   position: fixed;
   bottom: 0;
   width: auto;
   height: auto;
-   margin-left:-190px;
+   margin-left:-140px;
 }
 
 .navbar a {
@@ -69,4 +91,47 @@ body, html {
 .navbar a:hover {
   background: #ddd;
   color: black;
+}
+
+.otherass tr td{
+  padding: 10px;
+  display: inline-block;
+}
+
+.otherass img {
+  align-content: center;
+  margin: 20px;
+}
+
+.otherass p{
+  text-align: center;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: black;
+    color: #f7f7f7;
+    text-align: center;
+    border-radius: 2px;
+    margin: 5px;
+    padding: 10px;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
 }
