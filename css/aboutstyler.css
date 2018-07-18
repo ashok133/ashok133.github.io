@@ -38,6 +38,7 @@ body, html {
     padding: 2px;
     overflow: hidden;
     float: right;
+    background: #ffffff;
 }
 
 .content img {

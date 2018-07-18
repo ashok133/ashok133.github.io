@@ -4,19 +4,18 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-		<title>Blueprint: Vertical Timeline</title>
-		<meta name="description" content="Blueprint: Vertical Timeline" />
-		<meta name="keywords" content="timeline, vertical, layout, style, component, web development, template, responsive" />
-		<meta name="author" content="Codrops" />
+		<title>Projects - Ashok Patel</title>
+		
 		<link rel="shortcut icon" href="../favicon.ico">
 		<link rel="stylesheet" type="text/css" href="css/default.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/fade.css" />
 		<script src="js/modernizr.custom.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<script src="js/parallax.js"></script>
 	</head>
 	<body>
-		<div class="container">
+		<div class="container fade-in">
 			<header class="clearfix">
 				<!-- <span>Blueprint</span> -->
 				<!-- <h1>Vertical Timeline</h1> -->
@@ -25,7 +24,10 @@
 				<br>
 				<br>
 				
-				<p style="font-size: 1.3em">I love working on problems that affect real lives. Following is a chronological list of my major projects till date.</p>	
+				<p style="font-size: 1.3em">I love working on problems that can challenge me to learn more while making life a tad bit easier. <br>Following is a list of a few projects and solutions incorporating multiple technology stacks that I'm proud of.</p>
+
+				<!-- <p style="text-align: right; font-size: 1.6em; color: #000000;"> Priority</p>	
+				<p style="text-align: right; font-size: 1.3em; color: #888888;"> <a href="projects_chronological">Chronological</a></p>	 -->
 				<!-- <hr width="100%" style="margin-left: 0"> -->
 				<!-- <nav>
 					<a href="http://tympanus.net/Blueprints/ScrollingLayout/" class="icon-arrow-left" data-info="previous Blueprint">Previous Blueprint</a>
@@ -34,27 +36,18 @@
 			</header>	 
 			
 			<div class="main">
+				
+				<h2>Major Projects</h2>
+				<br>
 				<ul class="cbp_tmtimeline">
-					<li>
-						<time class="cbp_tmtime"><span style="font-size: 1.7em">2018</span></time>
-						<div class="cbp_tmicon"></div>
-						<div class="cbp_tmlabel ">
-							<div class="parallax-window" data-parallax="scroll" data-image-src="images/kelleychain.png">
-							<div class="content ">
-    							<h3>KelleyChain - Blockchain ledger in Python</h3>
-
-    		<p><strong>Kelley School of Business, Indiana University</strong></p>
-    		<p>Implemented a simple hyperledger network to understand and implement core Blockchain principles and concepts</p>
-    		
-    		<p style="font-size: 0.8em; text-align: right;">June 2018 - Present</p>
-							</div>​
-							</div>
-						</div>
-					</li>
 
 					<li>
 						<!-- <time class="cbp_tmtime"><span style="font-size: 1.7em">June 2018</span></time> -->
-						<div class="cbp_tmlabel ">
+						<!-- <time class="cbp_tmtime"><span style="font-size: 1.7em">Major Projects</span></time> -->
+						<time class="cbp_tmtime"><img src="images/logos/kelley.png" class="inst_logos"></time>
+						<div class="cbp_tmicon"></div>
+						<a href="financialdistress.html">
+						<div class="cbp_tmlabel" style="box-shadow: 10 10 10 10">
 							<div class="parallax-window" data-parallax="scroll" data-image-src="images/financial.png">
 							<div class="content ">
     							<h3>Financial Distress Prediction - Determining a firm's likelihood of defaulting based on historical financial information</h3>
@@ -64,11 +57,13 @@
 							</div>​
 							</div>
 						</div>
+					</a>
 					</li>
 					<li>
 						
 						<!-- <div class="cbp_tmicon cbp_tmicon-phone"></div> -->
-						<div class="cbp_tmlabel ">
+						<time class="cbp_tmtime"><img src="images/logos/somaiya.png" class="inst_logos"></time>
+						<a href="dataproc.html"><div class="cbp_tmlabel ">
 							<div class="parallax-window" data-parallax="scroll" data-image-src="images/dataproc.png">
 							<div class="content ">
     							<h3>Facial Feature Recognition using Cloud Dataproc</h3>
@@ -77,27 +72,34 @@
     		<p style="font-size: 0.8em; text-align: right;">April 2018 - May 2018</p>
 							</div>​
 							</div>
-						</div>
+						</div></a>
 					</li>
 
 					<li>
 						<!-- <time class="cbp_tmtime" datetime="2013-04-10 18:30"><span>4/10/13</span> <span>18:30</span></time> -->
 						<!-- <div class="cbp_tmicon cbp_tmicon-phone"></div> -->
-						<div class="cbp_tmlabel ">
-							<div class="parallax-window" data-parallax="scroll" data-image-src="images/tweetstream.png">
-							<div class="content ">
-    							<h3>Trend Analysis on real-time tweet stream data</h3>
-    		<p><strong>Big Data Analytics, KJSCE</strong></p>
-    		<p>To capture and analyze real-time tweet streams to understand current popularity of a topic</p>
-    		<p style="font-size: 0.8em; text-align: right;">April 2018 - May 2018</p>
-							</div>​
-							</div>
+						<time class="cbp_tmtime"><img src="images/logos/somaiya.png" class="inst_logos"></time>
+						<a href="tweetstream.html">
+							<div class="cbp_tmlabel ">
+								<div class="parallax-window" data-parallax="scroll" data-image-src="images/tweetstream.png">
+									<div class="content ">
+    									<h3>Trend Analysis on real-time tweet stream data</h3>
+    										<p><strong>Big Data Analytics, KJSCE</strong></p>
+    											<p>To capture and analyze real-time tweet streams to understand current popularity of a topic</p>
+    											<p style="font-size: 0.8em; text-align: right;">April 2018 - May 2018</p>
+											</div>​
+								</div>
 						</div>
+					</a>
 					</li>
 
 					<li>
-						<!-- <time class="cbp_tmtime" datetime="2013-04-10 18:30"><span>4/10/13</span> <span>18:30</span></time> -->
-						<!-- <div class="cbp_tmicon cbp_tmicon-phone"></div> -->
+						
+						<time class="cbp_tmtime">
+							<img src="images/logos/sih2018.jpg" class="inst_logos">
+							<img src="images/logos/isro.png" class="inst_logos">
+						</time>
+						<a href="formation.html">
 						<div class="cbp_tmlabel ">
 							<div class="parallax-window" data-parallax="scroll" data-image-src="images/formation.jpg">
 							<div class="content ">
@@ -107,44 +109,36 @@
     		<p style="font-size: 0.8em; text-align: right;">Jan 2018 - April 2018</p>
 							</div>​
 							</div>
-						</div>
+						</div></a>
 					</li>
 
 					<li>
 						<!-- <time class="cbp_tmtime" datetime="2013-04-10 18:30"><span>4/10/13</span> <span>18:30</span></time> -->
 						<!-- <div class="cbp_tmicon cbp_tmicon-phone"></div> -->
+						<time class="cbp_tmtime">
+							<img src="images/logos/rae.png" class="inst_logos">
+							<img src="images/logos/ficci.png" class="inst_logos">
+						</time>
+						<a href="attendance.html">
 						<div class="cbp_tmlabel ">
 							<div class="parallax-window" data-parallax="scroll" data-image-src="images/attendance.png" data-speed="0.0">
 							<div class="content ">
     							<h3>Attendance Monitoring Automation using Facial Recognition</h3>
-    		<p><strong>NBF Tech Challenge, Royal Academy of Engineering (UK) | FCCI (Federation of Indian Chambers of Commerce and Industry</strong></p>
+    		<p><strong>NBF Tech Challenge, Royal Academy of Engineering (UK) | FICCI (Federation of Indian Chambers of Commerce and Industry</strong></p>
     		<p>To design and develop an efficient automated attendance monitoring and management system using feature tracking based on facial recognition.</p>
     		<p style="font-size: 0.8em; text-align: right;">Dec 2017 - March 2018</p>
 							</div>​
 							</div>
-						</div>
-					</li>
-					<li>
-						<!-- <time class="cbp_tmtime" datetime="2013-04-10 18:30"><span>4/10/13</span> <span>18:30</span></time> -->
-						<!-- <div class="cbp_tmicon cbp_tmicon-phone"></div> -->
-						<div class="cbp_tmlabel ">
-							<div class="parallax-window" data-parallax="scroll" data-image-src="images/todo.png">
-							<div class="content ">
-    							<h3>TODO - Task tracking web application</h3>
-    		<p><strong>Advanced Internet Technologies, KJSCE</strong></p>
-    		<p>To develop a web based task tracking application with user authentication and registration</p>
-    		<p style="font-size: 0.8em; text-align: right;">Feb 2018 - March 2018</p>
-							</div>​
-							</div>
-						</div>
+						</div></a>
 					</li>
 
-				</ul>
-				<ul class="cbp_tmtimeline">
-
 					<li>
-						<time class="cbp_tmtime"><span style="font-size: 1.7em">2017</span></time>
-						<div class="cbp_tmicon cbp_tmicon-phone"></div>
+						<!-- <time class="cbp_tmtime"><span style="font-size: 1.7em">2017</span></time> -->
+						<time class="cbp_tmtime">
+							<img src="images/logos/sih2017.jpg" class="inst_logos">
+							<img src="images/logos/dst.png" class="inst_logos">
+						</time>
+						<a href="diwam.html">
 						<div class="cbp_tmlabel ">
 							<div class="parallax-window" data-parallax="scroll" data-image-src="images/diwam.jpg">
 							<div class="content ">
@@ -154,11 +148,15 @@
     		<p style="font-size: 0.8em; text-align: right;">April 2017 - March 2018</p>
 							</div>​
 							</div>
-						</div>
+						</div></a>
 					</li>
 					<li>
 						<!-- <time class="cbp_tmtime"><span style="font-size: 1.7em">2017</span></time> -->
 						<!-- <div class="cbp_tmicon cbp_tmicon-phone"></div> -->
+						<time class="cbp_tmtime">
+							<img src="images/logos/riidl.png" class="inst_logos">
+							<img src="images/logos/somaiya.png" class="inst_logos">
+						</time>
 						<div class="cbp_tmlabel ">
 							<div class="parallax-window" data-parallax="scroll" data-image-src="images/padrone.jpg">
 							<div class="content ">
@@ -171,20 +169,7 @@
 						</div>
 					</li>
 
-					<li>
-						<!-- <time class="cbp_tmtime"><span style="font-size: 1.7em">2017</span></time> -->
-						<!-- <div class="cbp_tmicon cbp_tmicon-phone"></div> -->
-						<div class="cbp_tmlabel ">
-							<div class="parallax-window" data-parallax="scroll" data-image-src="images/techfork.png">
-							<div class="content ">
-    							<h3>Tech-fork - Stub technology news website to understand Google Analytics</h3>
-    		<p><strong>Social, Mobile, Analytics and Cloud (SMAC), KJSCE</strong></p>
-    		<p>To understand user behavior metrics and trends during interaction with a website monitored by Google Analytics</p>
-    		<p style="font-size: 0.8em; text-align: right;">Sept 2017 - Oct 2017</p>
-							</div>​
-							</div>
-						</div>
-					</li>
+					
 					
 					<li>
 						<!-- <time class="cbp_tmtime" datetime="2013-04-10 18:30"><span>4/10/13</span> <span>18:30</span></time> -->
@@ -203,6 +188,7 @@
 					<li>
 						<!-- <time class="cbp_tmtime" datetime="2013-04-10 18:30"><span>4/10/13</span> <span>18:30</span></time> -->
 						<!-- <div class="cbp_tmicon cbp_tmicon-phone"></div> -->
+						<time class="cbp_tmtime"><img src="images/logos/cfg.png" class="inst_logos"></time>
 						<div class="cbp_tmlabel ">
 							<div class="parallax-window" data-parallax="scroll" data-image-src="images/ceta.png">
 							<div class="content ">
@@ -214,7 +200,93 @@
 							</div>
 						</div>
 					</li>
+				
 					<li>
+						<!-- <time class="cbp_tmtime" datetime="2013-04-10 18:30"><span>4/10/13</span> <span>18:30</span></time> -->
+						<!-- <div class="cbp_tmicon cbp_tmicon-phone"></div> -->
+						<div class="cbp_tmlabel">
+							<div class="parallax-window" data-parallax="scroll" data-image-src="images/lpss.png">
+							<div class="content ">
+    							<h3>Low Power Smart Systems for Anomaly Detection using Deep Learning</h3>
+    		<p><strong>Independent Project - Deep Learning</strong></p>
+    		<p>To train a deep neural network for image classification and optimize it for low power systems to detect anomalies under defined classes.</p>
+    		<p style="font-size: 0.8em; text-align: right;">Jan 2017 - April 2017</p>
+							</div>​
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<!-- <time class="cbp_tmtime" datetime="2013-04-10 18:30"><span>4/10/13</span> <span>18:30</span></time> -->
+						<!-- <div class="cbp_tmicon cbp_tmicon-phone"></div> -->
+						<time class="cbp_tmtime"><img src="images/logos/xda.jpg" class="inst_logos"></time>
+						<div class="cbp_tmlabel ">
+							<div class="parallax-window" data-parallax="scroll" data-image-src="images/nougatcm.png">
+							<div class="content ">
+    							<h3>Nougat CM for CyanogenMod Theme Engine</h3>
+    		<p><strong>XDA Developers</strong></p>
+    		<p>Designed and developed Nougat CM for CyanogenMod Theme Engine - the first of its kind with a total of 27k+ downloads.  </p>
+    		<p style="font-size: 0.8em; text-align: right;">June 2016 - July 2016</p>
+							</div>​
+							</div>
+						</div>
+					</li>
+					
+
+				</ul>
+
+
+				<h2>Other Projects</h2>
+				<br>
+
+				<ul class="cbp_tmtimeline">
+					<li>
+						<time class="cbp_tmtime"><img src="images/logos/kelley.png" class="inst_logos"></time>
+						<div class="cbp_tmicon"></div>
+						<a href="kelleychain.html">
+						<div class="cbp_tmlabel" style="box-shadow: 10 10 10 10">
+							<div class="parallax-window" data-parallax="scroll" data-image-src="images/kelleychain.png">
+							<div class="content" >
+    							<h3>KelleyChain - Blockchain ledger in Python</h3>
+    		<p><strong>Kelley School of Business, Indiana University</strong></p>
+    		<p>Implemented a simple hyperledger network to understand and implement core Blockchain principles and concepts</p>
+    		<p style="font-size: 0.8em; text-align: right;">June 2018 - Present</p>
+							</div>​
+							</div>
+						</div></a>
+					</li>
+
+					<li>
+						<time class="cbp_tmtime"><img src="images/logos/somaiya.png" class="inst_logos"></time>
+						<div class="cbp_tmlabel ">
+							<div class="parallax-window" data-parallax="scroll" data-image-src="images/todo.png">
+							<div class="content ">
+    							<h3>TODO - Task tracking web application</h3>
+    		<p><strong>Advanced Internet Technologies, KJSCE</strong></p>
+    		<p>To develop a web based task tracking application with user authentication and registration</p>
+    		<p style="font-size: 0.8em; text-align: right;">Feb 2018 - March 2018</p>
+							</div>​
+							</div>
+						</div>
+					</li>
+
+					<li>
+						
+						<!-- <div class="cbp_tmicon cbp_tmicon-phone"></div> -->
+						<time class="cbp_tmtime"><img src="images/logos/somaiya.png" class="inst_logos"></time>
+						<div class="cbp_tmlabel ">
+							<div class="parallax-window" data-parallax="scroll" data-image-src="images/techfork.png">
+							<div class="content ">
+    							<h3>Tech-fork - Stub technology news website to understand Google Analytics</h3>
+    		<p><strong>Social, Mobile, Analytics and Cloud (SMAC), KJSCE</strong></p>
+    		<p>To understand user behavior metrics and trends during interaction with a website monitored by Google Analytics</p>
+    		<p style="font-size: 0.8em; text-align: right;">Sept 2017 - Oct 2017</p>
+							</div>​
+							</div>
+						</div>
+					</li>
+
+						<li>
 						<!-- <time class="cbp_tmtime" datetime="2013-04-10 18:30"><span>4/10/13</span> <span>18:30</span></time> -->
 						<!-- <div class="cbp_tmicon cbp_tmicon-phone"></div> -->
 						<div class="cbp_tmlabel ">
@@ -228,23 +300,12 @@
 							</div>
 						</div>
 					</li>
-					<li>
+
+
+						<li>
 						<!-- <time class="cbp_tmtime" datetime="2013-04-10 18:30"><span>4/10/13</span> <span>18:30</span></time> -->
 						<!-- <div class="cbp_tmicon cbp_tmicon-phone"></div> -->
-						<div class="cbp_tmlabel ">
-							<div class="parallax-window" data-parallax="scroll" data-image-src="images/lpss.png">
-							<div class="content ">
-    							<h3>Low Power Smart Systems for Anomaly Detection using Deep Learning</h3>
-    		<p><strong>Independent Project - Deep Learning</strong></p>
-    		<p>To train a deep neural network for image classification and optimize it for low power systems to detect anomalies under defined classes.</p>
-    		<p style="font-size: 0.8em; text-align: right;">Jan 2017 - April 2017</p>
-							</div>​
-							</div>
-						</div>
-					</li>
-					<li>
-						<!-- <time class="cbp_tmtime" datetime="2013-04-10 18:30"><span>4/10/13</span> <span>18:30</span></time> -->
-						<!-- <div class="cbp_tmicon cbp_tmicon-phone"></div> -->
+						<time class="cbp_tmtime"><img src="images/logos/somaiya.png" class="inst_logos"></time>
 						<div class="cbp_tmlabel ">
 							<div class="parallax-window" data-parallax="scroll" data-image-src="images/wanalyse.jpg">
 							<div class="content ">
@@ -257,6 +318,7 @@
 							</div>
 						</div>
 					</li>
+
 					<li>
 						<!-- <time class="cbp_tmtime" datetime="2013-04-10 18:30"><span>4/10/13</span> <span>18:30</span></time> -->
 						<!-- <div class="cbp_tmicon cbp_tmicon-phone"></div> -->
@@ -271,13 +333,12 @@
 							</div>
 						</div>
 					</li>
-				</ul>
 
-				<ul class="cbp_tmtimeline">
+
 					<li>
 						<!-- <time class="cbp_tmtime" datetime="2013-04-10 18:30"><span>4/10/13</span> <span>18:30</span></time> -->
-						<time class="cbp_tmtime"><span style="font-size: 1.7em">2016</span></time>
-						<div class="cbp_tmicon cbp_tmicon-phone"></div>
+						<!-- <time class="cbp_tmtime"><span style="font-size: 1.7em">2016</span></time> -->
+						<time class="cbp_tmtime"><img src="images/logos/somaiya.png" class="inst_logos"></time>
 						<div class="cbp_tmlabel ">
 							<div class="parallax-window" data-parallax="scroll" data-image-src="images/mash.png">
 							<div class="content ">
@@ -289,30 +350,12 @@
 							</div>
 						</div>
 					</li>
+
 					<li>
 						<!-- <time class="cbp_tmtime" datetime="2013-04-10 18:30"><span>4/10/13</span> <span>18:30</span></time> -->
-						<!-- <div class="cbp_tmicon cbp_tmicon-phone"></div> -->
-						<div class="cbp_tmlabel ">
-							<div class="parallax-window" data-parallax="scroll" data-image-src="images/nougatcm.png">
-							<div class="content ">
-    							<h3>Nougat CM for CyanogenMod Theme Engine</h3>
-    		<p><strong>XDA Developers</strong></p>
-    		<p>Designed and developed Nougat CM for CyanogenMod Theme Engine - the first of its kind with a total of 27k+ downloads.  </p>
-    		<p style="font-size: 0.8em; text-align: right;">June 2016 - July 2016</p>
-							</div>​
-							</div>
-						</div>
-					</li>
-
-				</ul>
-
-				<ul class="cbp_tmtimeline">
-					<li>
-						<!-- <time class="cbp_tmtime" datetime="2013-04-10 18:30"><span>4/10/13</span> <span>18:30</span></time> -->
-						<time class="cbp_tmtime"><span style="font-size: 1.7em">2015</span></time>
-						<div class="cbp_tmicon cbp_tmicon-phone"></div>
-						<div class="cbp_tmlabel ">
-
+						<!-- <time class="cbp_tmtime"><span style="font-size: 1.7em">2015</span></time> -->
+						<time class="cbp_tmtime"><img src="images/logos/somaiya.png" class="inst_logos"></time>
+						<div class="cbp_tmlabel">
 							<div class="parallax-window" data-parallax="scroll" data-image-src="images/aes.png">
 
 							<div class="content ">
@@ -324,12 +367,17 @@
 							</div>
 						</div>
 					</li>
+
 					<li>
 						<!-- <time class="cbp_tmtime" datetime="2013-04-10 18:30"><span>4/10/13</span> <span>18:30</span></time> -->
 						<!-- <div class="cbp_tmicon cbp_tmicon-phone"></div> -->
-						<div class="cbp_tmlabel ">
-							<div class="parallax-window" data-parallax="scroll" data-image-src="images/fkm.png">
-								
+						<time class="cbp_tmtime">
+								<img src="images/logos/riidl.png" class="inst_logos">
+								<img src="images/logos/fkm.jpg" class="inst_logos">
+							</time>
+						<div class="cbp_tmlabel">
+							
+							<div class="parallax-window" data-parallax="scroll" data-image-src="images/fkm.png">								
 							<div class="content ">
     							<h3>FactoryKaMaal.com - Graphic Design and Web Development</h3>
     		<p><strong>FactoryKaMaal, Mumbai</strong></p>
@@ -339,11 +387,14 @@
 							</div>
 						</div>
 					</li>
-				</ul>
+				
+					
+				</ul>				
+
 			</div>
 		</div>
 		<center>
-	<div class="navbar">
+	<div class="navbar fade-in">
   		<a href="../index.html">Home</a>
   		<a href="../about.html">About</a>
   		<!-- <a href="../about.html">CV</a> -->
