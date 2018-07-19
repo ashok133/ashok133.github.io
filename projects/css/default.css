@@ -207,3 +207,16 @@ background:rgba(0,0,0,0.3);
 .icon-arrow-left:before {
 	content: "\f060";
 }
+
+@media screen and (max-width: 65.375em) {
+
+	}
+}
+
+@media screen and (max-width: 47.2em) {
+
+	h1 {
+		font-size: 2px;
+	}
+
+}
