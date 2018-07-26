@@ -7,18 +7,20 @@
    url('product_sans_bold.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
 }  
 
-html,
-body {
-  height: 100%;
-  overflow-y: scroll;
-  margin: 0;
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow-y: scroll;
 }
-/*
-body {
-  overflow: hidden;
-  background-color: #ffffff; 
 
-}*/
+.bg {
+    /*background-image: url("../images/contact-bg.png");*/
+    background-color: #212121;
+    width: auto; 
+    background-position: center;
+    background-repeat: no-repeat;
+    /*background-size: cover;*/
+}
 
 * {
     box-sizing: border-box;
@@ -87,6 +89,9 @@ body {
   color: black;
 }
 
+/*.link-text a {
+  margin-left: 54px;
+}*/
 
 /*
 .navbar {
