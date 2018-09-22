@@ -102,12 +102,23 @@ a:hover {
 .content {
     width: 100%;
     /*border: 2px solid black;*/
+    border-radius: 10px;
+    box-shadow: 0px 15px 60px rgba(112, 112, 112, 0.1);
     padding-left: 30px;
     padding-right: 20px;
     overflow: hidden;
     float: right;
-    color: #ffffff;
-    padding-bottom:-30px
+    color: #000000;
+    padding-bottom:-30px;
+    transition: all 0.3s ease 0s;
+  	cursor: pointer;
+}
+
+.content:hover {
+  /*background-color: #ffffff;*/
+  box-shadow: 0px 15px 60px rgba(112, 112, 112, 0.3);
+  /*color: #ffffff;*/
+  transform: translateY(-2px);
 }
 
 .content img {
@@ -140,42 +151,6 @@ background:rgba(0,0,0,0.3);
 .left-headers {
 	font-size: 1.2em; 
 	color: #888888;
-}
-
-/*.links a : hover {
-	
-	text-decoration: underline;
-}*/
-
-
-
-.navbar {
-  left:50%;
-  overflow: hidden;
-  /*font-family: Consolas, monaco, monospace;*/
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  /*font-family: 'Quicksand';*/
-  background-color: #f7f7f7;
-  position: fixed;
-  bottom: 0;
-  width: auto;
-  height: auto;
-   margin-left:-140px;
-}
-
-.navbar a {
-  float: left;
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.navbar a:hover {
-  background: #ddd;
-  color: black;
 }
 
 .icon-drop:before, 

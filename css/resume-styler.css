@@ -1,0 +1,50 @@
+
+body {
+    background-image: url("../images/geometry.png");
+    background-repeat: repeat;
+}
+
+.fab {
+   width: 70px;
+   height: 70px;
+   background-color: white;
+   border-radius: 50%;
+   line-height: 70px;
+   color: white;
+   text-align: center;
+   position: fixed;
+   right: 50px;
+   bottom: 50px;
+   font-family: 'verdana';
+   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+}
+
+.fab:hover {
+   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+   transform: scale(1.02);
+}
+
+.a:link {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.a:visited {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.image-box {
+	margin: 7% 14%;
+	transition: all .2s ease-in-out;
+	box-shadow: 0px 20px 75px rgba(0,0,0,0.1);
+	width: 70%;
+	
+}
+.image-box:hover {
+	margin: 6.5% 14%;
+	box-shadow: 0px 55px 90px rgba(0,0,0,0.13);
+	background-position: 0 100%, 50% 95%;
+	transform: scale(1.005);
+}
