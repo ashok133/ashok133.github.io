@@ -102,7 +102,7 @@ a:hover {
 .content {
     width: 100%;
     /*border: 2px solid black;*/
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 0px 15px 60px rgba(112, 112, 112, 0.1);
     padding-left: 30px;
     padding-right: 20px;
@@ -116,9 +116,9 @@ a:hover {
 
 .content:hover {
   /*background-color: #ffffff;*/
-  box-shadow: 0px 15px 60px rgba(112, 112, 112, 0.3);
+  box-shadow: 0px 25px 90px rgba(112, 112, 112, 0.2);
   /*color: #ffffff;*/
-  transform: translateY(-2px);
+  transform: translateY(-1.5px);
 }
 
 .content img {
