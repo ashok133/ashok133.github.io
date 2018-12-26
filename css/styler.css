@@ -1,23 +1,45 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:700);
 /*@import url('https://fonts.googleapis.com/css?family=Proxima+Nova');*/
 
+* {
+    box-sizing: border-box;
+}
+
 body, html {
     height: 100%;
     margin: 0;
     overflow-y: scroll;
+    /* overflow: hidden; */
     background-color: rgba(255, 255, 255, 0.4);
+    -webkit-overflow-scrolling: touch;
 }
 
 .bg {
     background-color: #212121;
-    width: auto; 
+    width: auto;
     background-position: center;
     background-repeat: no-repeat;
     /*background-size: cover;*/
 }
 
-* {
-    box-sizing: border-box;
+.home-background {
+  z-index: -1;
+  background-image: url('../images/cloud-bg.png');
+  /* width: 19px; */
+  position: fixed;
+  background-position: 50% 50%;
+  /* background-clip: inherit; */
+  /* background-size: cover; */
+  /* object-fit: cover; */
+}
+
+.hello-message {
+  font-size: 52px;
+  text-shadow: 0px 7px 12px rgba(150, 150, 150, 0.10);
+}
+
+.from-description {
+  text-shadow: 0px 7px 16px rgba(150, 150, 150, 0.08);
 }
 
 .contact-card {
@@ -28,24 +50,13 @@ body, html {
   margin-top: 70px;
   width: 420px;
   height: 30%;
-  border-radius: 5px; 
+  border-radius: 5px;
   box-shadow: 0px 15px 140px rgba(112, 112, 112, 0.15);
 }
 
-.about-card {
-  background-color: #ffffff;
-  padding: 30px;
-  padding-top: 10px;
-  margin-top: 30px;
-  width: 100%;
-  height: 30%;
-  border-radius: 5px; 
-  box-shadow: 0px 15px 140px rgba(112, 112, 112, 0.25);
-}
-
 .headerDivider {
-     border-left:1px solid #38546d; 
-     border-right:1px solid #16222c; 
+     border-left:1px solid #38546d;
+     border-right:1px solid #16222c;
      /*height:80px;*/
      position:absolute;
      /*right:249px;*/
@@ -55,13 +66,13 @@ body, html {
 .welcome {
   /*font-family: Consolas, monaco, monospace;*/
   /*font-family: 'Quicksand', sans-serif;*/
-  /*font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";*/
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; */
   /*font-family: verdana;*/
-  /*font-family: 'Proxima Nova Soft','Helvetica Neue',sans-serif;*/
-  font-family: "Proxima Nova Soft", sans-serif;
+  font-family: 'Proxima Nova Soft','Helvetica Neue',sans-serif;
+  /* font-family: "Proxima Nova Soft", sans-serif; */
   /*font-family: 'proxima-nova', sans-serif;*/
-  letter-spacing: 1.1px;
-  line-height: 1.3;
+  letter-spacing: 1.0px;
+  line-height: 1.2;
   font-size: 18px;
   color: #000000;
   font-style: normal;
@@ -92,7 +103,7 @@ a {
     background-color: red;
     transition: all .3s ease;
   }
-  
+
   &:hover {
     &::after {
       transform: scaleX(1);
@@ -117,8 +128,8 @@ a:visited {
   color: #000;
   background-color: #fff;
   border: none;
-  border-radius: 35px;
-  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.08);
+  border-radius: 50px;
+  box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease 0s;
   cursor: pointer;
   outline: none;
@@ -126,23 +137,34 @@ a:visited {
   }
 
 .cv-button:hover {
-  background-color: #ffffff;
-  box-shadow: 0px 15px 60px rgba(112, 112, 112, 0.2);
+  background-color: rgb(186, 85, 211);
+  box-shadow: 0px 10px 60px rgba(186, 85, 211, 0.4);
   color: #ffffff;
   transform: translateY(-2px);
 }
 
-.profile {
-        margin-top: 16px;
-      }
+.profile-image-div {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #00000000;
+  margin-top: 16px;
+  box-shadow: 0px 15px 60px rgba(186, 85, 211, 0.3);
+  transition: all 0.5s ease 0s;
+}
+
+.profile-image-div:hover {
+  box-shadow: 0px 15px 60px rgba(186, 85, 211, 0.4);
+  transform: scale(1.02);
+}
 
 #googlemapbg {
-  height: 100%; 
-  width: 100%; 
-  position:absolute; 
+  height: 100%;
+  width: 100%;
+  position:absolute;
   background-color: #ffffff;
-  top: 0; 
-  left: 0; 
+  top: 0;
+  left: 0;
   z-index: -3; /* Set z-index to 0 as it will be on a layer below the contact form */
 }
 
@@ -150,33 +172,67 @@ a:visited {
 @media screen and (max-width: 65.375em) {
 
   .contact-card {
-    /*position: absolute;*/
     background-color: #ffffff;
     padding: 30px;
     margin-top: 70px;
-    /*margin-right: 670px;*/
-    /*margin-left: -20px;*/
     width: 420px;
     height: 30%;
-    border-radius: 5px; 
+    border-radius: 5px;
     box-shadow: 0px 15px 140px rgba(112, 112, 112, 0.15);
   }
+
+  .profile-image-div {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #00000000;
+    margin-top: 16px;
+    /* box-shadow: 0px 15px 60px rgba(186, 85, 211, 0.3); */
+    transition: all 0.5s ease 0s;
+  }
+
 
 }
 
 @media screen and (max-width: 47.2em) {
 
   .contact-card {
-    /*position: absolute;*/
     background-color: #ffffff;
     padding: 30px;
     margin-top: 70px;
-    /*margin-right: 670px;*/
-    /*margin-left: -20px;*/
     width: 320px;
     height: 30%;
-    border-radius: 5px; 
+    border-radius: 5px;
     box-shadow: 0px 15px 140px rgba(112, 112, 112, 0.15);
   }
-  
+
+  .welcome {
+    font-size: 16px;
+  }
+
+  .profile-image-div {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hello-message {
+    font-size: 42px;
+    text-align: center;
+  }
+
+  .cv-button {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+  }
+
+  .cv-button-div {
+    margin: auto;
+    width: 170px;
+    /* margin-right: auto; */
+  }
+
+  .from-description {
+    text-align: center;
+  }
 }

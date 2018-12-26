@@ -2,12 +2,13 @@ body, html {
     height: 100%;
     margin: 0;
     overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
 }
 
 .bg {
     /*background-image: url("../images/contact-bg.png");*/
     background-color: #212121;
-    width: auto; 
+    width: auto;
     background-position: center;
     background-repeat: no-repeat;
     /*background-size: cover;*/
@@ -30,6 +31,18 @@ body, html {
   position: relative;
   padding-top: 40px;
   /*text-shadow: 0px 7px 26px rgba(150, 150, 150, 0.25)*/
+}
+
+
+.about-card {
+  background-color: #ffffff;
+  padding: 30px;
+  padding-top: 10px;
+  margin-top: 30px;
+  width: 100%;
+  height: 30%;
+  border-radius: 5px;
+  box-shadow: 0px 15px 140px rgba(112, 112, 112, 0.25);
 }
 
 .content {
@@ -106,4 +119,33 @@ body, html {
 .tooltip:hover .tooltiptext {
     visibility: visible;
     opacity: 1;
+}
+
+@media screen and (max-width: 65.375em) {
+
+}
+
+@media screen and (max-width: 47.2em) {
+
+  .about-card {
+    font-size: 14px;
+    margin-top: 20px;
+    padding: 20px;
+    /* margin-left: 0px; */
+  }
+
+  .content-edu {
+    float: none;
+  }
+
+  .content-edu img{
+    float: none;
+  }
+
+  h2:hover {
+    color: blue;
+  }
+
+
+
 }
